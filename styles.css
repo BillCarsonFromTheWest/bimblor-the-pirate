@@ -1,0 +1,124 @@
+* {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  main {
+    background-color: blue;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .header-logo {
+    width: 3rem;
+    height: 3rem;
+    align-self: center;
+  }
+  
+  .mission-statement {
+    background-image: url("./PirateBG.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    
+  }
+  
+  .mission-statement .box {
+    background: hsl(0, 100%, 0%, .4);
+    max-width: 20%;
+    min-width: 200px;
+    position: relative;
+    top: 20%;
+    left: 15%;
+    padding: 0.2rem 1rem;
+  }
+  
+  .mission-statement .text {
+    color: white;
+  }
+  
+  .collection-heading,.team-heading{
+    text-align: center;
+  }
+  
+  .team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(
+          90deg,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 154, 0, 1) 10%,
+          rgba(208, 222, 33, 1) 20%,
+          rgba(79, 220, 74, 1) 30%,
+          rgba(63, 218, 216, 1) 40%,
+          rgba(47, 201, 226, 1) 50%,
+          rgba(28, 127, 238, 1) 60%,
+          rgba(95, 21, 242, 1) 70%,
+          rgba(186, 12, 248, 1) 80%,
+          rgba(251, 7, 217, 1) 90%,
+          rgba(255, 0, 0, 1) 100%);
+          
+  }
+  
+  .moment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  
+  .moment caption{
+    margin: 0;
+    padding-top: 3rem; 
+  } 
+  
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: green;
+    border: 2px solid black;
+    align-items: stretch;
+    margin: 1rem;
+  }
+  
+  .team-member p, .team-member h3{
+    border-top: 2px solid black;
+    justify-self: flex-start;
+    margin: 0;
+    padding: 0.3rem 1rem;
+  }
+  
+  .moment img, .team-member img{
+    max-width: 70%;
+    align-self: center;
+  }
+  
+  .team-member img {
+    padding: 2rem 0;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .collection, .team {
+    flex-direction: column;
+  }
+  }
